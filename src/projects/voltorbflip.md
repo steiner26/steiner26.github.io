@@ -27,13 +27,29 @@ domain [voltorbflip.com](http://www.voltorbflip.com/) was being used by a level 
 Due to this lack of an online replica, I decided to set out and recreate the minigame
 as a personal project.
 
----
+## Building the Game
 
-Undertaking this project has been a great way to learn HTML, CSS and Javascript,
-as I've began to understand each concept as it pertained to recreating the minigame.
-From CSS animations to HTML DOM navigation and jquery event listeners, I now
-have a solid understanding of the basics of web development. The site is still
-a work in progress, as I plan to add keyboard support and the memo pad that is
-present in the original minigame. The source code for this is available on
-<a href="/voltorbflip">my GitHub Page</a>. If you have any
-problems with the website, feel free to submit an issue on GitHub. Click on the image above to play!
+I originally built this site using plain Javascript, HTML and jQuery. I decided to
+base the structure of the codebase very closely off of the original version of
+[2048](https://github.com/gabrielecirulli/2048) by Gabriele Cirulli. The code for
+2048 was originally written in 2014 before the release of ES6, so as I built my
+Voltorb Flip site in early 2019 it was already years out of date. I completed all
+of the game's funcitonality excluding the memo pad, and at the time was quite happy
+with how it turned out.
+
+About 6 months later, I decided to revisit my recreation of the game and update it
+to some a more recent paradigm using Gatsby. I repurposed much of the original code
+including the board generation, but created an entirely new structure using React
+components and various npm packages. During this phase of redevelopment I made sure
+that the game looked good on all devices and was well-suited for play on mobile
+browsers.
+
+## What I Learned
+
+This project was a great way for me to learn HTML, CSS and Javascript, and later on
+to reinforce my knowledge of React and modern web development. Having an concrete
+idea to work on really aided my workflow and helped me focus on expand on my
+programming skills without having to worry so much about design or visuals. In
+addition, I was able to create something that I would enjoy playing! If you'd like
+to check out the game for yourself, you can do so at [steiner26.github.io/voltorbflip].
+Enjoy!

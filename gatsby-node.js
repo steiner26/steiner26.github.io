@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
       posts.forEach(post => {
         createPage({
           path: `/projects/${post.node.frontmatter.slug}/`,
-          component: path.resolve(`./src/templates/project-page.js`),
+          component: path.resolve(`./src/templates/projectPage.js`),
           context: {
             slug: post.node.frontmatter.slug,
           },

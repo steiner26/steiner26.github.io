@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.subcontainer {
+  margin: 0px 20px;
+  width: 100%;
+  max-width: 800px;
+}
