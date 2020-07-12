@@ -1,1 +1,130 @@
 @import "../variables.scss";
+
+.header {
+  background-color: $color-light-green;
+  border-color: $color-dark-green;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  margin-bottom: 0px;
+  min-height: 50px;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 0px 15px;
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+  }
+
+  @media (min-width: $breakpoint-laptop) {
+    width: 92%;
+  }
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px -15px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0;
+  }
+}
+
+.title {
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 20px;
+  padding: 15px;
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-left: -15px;
+  }
+}
+
+.toggle {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 15px 8px 0px;
+  outline: none;
+  padding: 9px 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-dark-gray;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.icon-bar {
+  background-color: white;
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+
+  &:not(:first-child) {
+    margin-top: 4px;
+  }
+}
+
+.navbar-content {
+  margin: 0px -15px;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0px 15px;
+  transition: max-height 0.35s ease-in-out;
+
+  &.open {
+    max-height: 340px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0;
+    max-height: none;
+    padding: 0;
+  }
+}
+
+.nav {
+  list-style: none;
+  margin: 7.5px -15px;
+
+  a {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+
+    li {
+      margin: 0;
+    }
+  }
+}
