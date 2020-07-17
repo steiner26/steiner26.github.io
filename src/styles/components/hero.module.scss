@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0px;
+}
+
+.container {
+  padding: 0px 15px;
+  @include main-content;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 750px;
+    }
+  }
+}
+
+.headshot {
+  border-radius: 50%;
+}

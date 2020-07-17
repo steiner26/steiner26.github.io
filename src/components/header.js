@@ -14,20 +14,20 @@ const Header = () => {
   }
 
   return (
-    <header class={styles.header}>
-      <div class={styles.container}>
-        <div class={styles.navbarHeader}>
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.navbarHeader}>
           <Link className={styles.title} to="/">
             Brandon Stein
           </Link>
-          <button class={styles.toggle} onClick={toggleIsOpen}>
-            <span class={styles.iconBar}></span>
-            <span class={styles.iconBar}></span>
-            <span class={styles.iconBar}></span>
+          <button className={styles.toggle} onClick={toggleIsOpen}>
+            <span className={styles.iconBar}></span>
+            <span className={styles.iconBar}></span>
+            <span className={styles.iconBar}></span>
           </button>
         </div>
-        <div class={cx(styles.navbarContent, { [styles.open]: isOpen })}>
-          <ul class={styles.nav}>
+        <div className={cx(styles.navbarContent, { [styles.open]: isOpen })}>
+          <ul className={styles.nav}>
             <li>
               <Link to="/projects/voltorbflip">Voltorb Flip</Link>
             </li>

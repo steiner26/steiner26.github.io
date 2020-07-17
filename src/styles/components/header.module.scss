@@ -19,12 +19,9 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 750px;
   }
 
-  @media (min-width: $breakpoint-laptop) {
-    width: 92%;
-  }
+  @include main-content;
 }
 
 .navbar-header {

@@ -7,3 +7,17 @@ $breakpoint-desktop: 1440px;
 $color-dark-gray: #333333;
 $color-light-green: #1abc9c;
 $color-dark-green: #16a085;
+
+@mixin main-content {
+  @media (min-width: $breakpoint-tablet) {
+    width: 750px;
+  }
+
+  @media (min-width: $breakpoint-laptop) {
+    width: 1170px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 1400px;
+  }
+}
