@@ -1,6 +1,7 @@
 ---
-title: Finix
 author: Brandon Stein
+featuredImage: ../images/gatsby-astronaut.png
+title: Finix
 slug: finix
 ---
 

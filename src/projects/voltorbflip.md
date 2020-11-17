@@ -1,10 +1,11 @@
 ---
-title: Voltorb Flip
 author: Brandon Stein
+featuredImage: ../images/voltorbflip.png
+title: Voltorb Flip
 slug: voltorbflip
 ---
 
-## Voltorb Flip
+## About the Game
 
 Voltorb Flip is a puzzle minigame found in the Game Corners of Pokémon HeartGold
 and SoulSilver that can be described as a mix between Picross/Nonogram and Minesweeper.
@@ -39,7 +40,7 @@ with how it turned out.
 
 About 6 months later, I decided to revisit my recreation of the game and update it
 to some a more recent paradigm using Gatsby. I repurposed much of the original code
-including the board generation, but created an entirely new structure using React
+such as the board generation, but created an entirely new structure using React
 components and various npm packages. During this phase of redevelopment I made sure
 that the game looked good on all devices and was well-suited for play on mobile
 browsers.
